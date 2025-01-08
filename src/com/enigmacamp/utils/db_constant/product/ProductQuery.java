@@ -2,7 +2,8 @@ package com.enigmacamp.utils.db_constant.product;
 
 public enum ProductQuery {
     INSERT("INSERT INTO products(name,price) values(?, ?) RETURNING id"),
-    GET_ALL("SELECT * FROM products");
+    GET_ALL("SELECT * FROM products"),
+    GET_BY_ID("SELECT * FROM products WHERE id = ?");
 
     private final String query;
 
