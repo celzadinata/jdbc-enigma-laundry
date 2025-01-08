@@ -40,6 +40,9 @@ public class TransactionConsole {
                     this.createNewTransaction();
                     break;
 
+                case 2:
+                    return;
+
                 default:
                     System.out.println("Pilihan tidak valid");
             }
